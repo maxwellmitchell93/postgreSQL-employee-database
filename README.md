@@ -1,6 +1,12 @@
 # PostgreSQL-Employee-Database
 ## Description:
 This backend command-line application manages an employee database and was made with Node.js, Inquirer, PostgreSQL & Ascii Art Logo.
+## User Story
+```md
+AS A business owner
+I WANT to be able to view and manage the departments, roles, and employees in my company
+SO THAT I can organize and plan my business
+```
 ## Instalation:
 Follow steps below for instalation
 
@@ -18,7 +24,11 @@ Follow steps below for instalation
 ![screenshot2](./assets/img/Screenshot%202024-05-23%20at%2010.06.42 PM.png)
 Click [here](https://www.loom.com/share/e6267b323c3b40e4a706a93f367575a7?sid=fbc8eff0-42e3-4f74-8f90-4e02879ebab8) for a walkthrough video.
 ## Credits:
-[Chat GPT](https://chatgpt.com/?oai-dm=1) & [Stackover flow](https://stackoverflow.com/)
+- [Chat GPT](https://chatgpt.com/?oai-dm=1),  
+- [eXpert Learning Assistant](),
+
+- [Stackover flow](https://stackoverflow.com/), 
+
 
 
 
