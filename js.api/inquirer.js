@@ -20,7 +20,7 @@ const {
 } = require('./questions.js')
 
 pool.connect();
-//Expert Learning Assistant
+
 //add role function
 const addRole = () => {
 	inquirer.prompt(addRoleQuestions)
@@ -39,7 +39,7 @@ const addRole = () => {
 	})
 
 };
-//Expert Learning Assistant
+
 //add employee function
 const addEmployee = () => {
 	inquirer.prompt(addEmployeeQuestions)
@@ -70,7 +70,7 @@ const addEmployee = () => {
 	})
 };
 
-//Expert Learning assistant	 
+ 
 //Add Department Function
 const addDepartment = () => {
 	inquirer.prompt(addDepartmentQuestion)
@@ -95,7 +95,7 @@ const exitCommand = () => {
 	console.log("To confirm your exit, press 'ctrl + c'");
 	return;
 }
-//Stack OverFlow
+
 //Switch Statement 
 //Value of the expression is compared with the values of each case
 const switchCommand = (commandObject) => {
