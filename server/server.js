@@ -1,12 +1,11 @@
 const express = require('express');
 const path = require('path');
 const {Pool} = require('pg');
-//asciiart logo
-const logo = require('asciiart-logo');
+
 
 const PORT = 3001;
 const app = express();
-//expert learning assistant
+
 // Express middleware
 app.use(express.static('./api/inquirer.js'))
 app.use(express.urlencoded({ extended: false }));
@@ -26,7 +25,7 @@ pool.connect();
 app.get('/', (req, res) => 
     res.send('<p>Please initiate the Inquirer</p>')
 );
-//stack overflow
+
 // View Departments
 app.get('/api/departments', (req, res) => {
   const sql = `SELECT * FROM department`;
@@ -43,7 +42,7 @@ app.get('/api/departments', (req, res) => {
     });
   });
 });
-//stack overflow
+
 // View Roles
 app.get('/api/roles', (req, res) => {
   const sql = `SELECT role.title AS "Job Title", role.id AS "Role ID", role.salary AS "Salary", department.name AS "Department" FROM role JOIN department ON department.id = role.department_id;`;
@@ -60,7 +59,7 @@ app.get('/api/roles', (req, res) => {
     });
   });
 });
-//stack overflow ,expert learning assistant
+
 // View Employeees
 app.get('/api/employees', (req, res) => {
   const sql = `SELECT employee.id AS "Employee ID", employee.first_name AS "First Name", employee.last_name AS "Last Name", role.title AS "Job Title", department.name AS "Department", role.salary AS "Salary", employee.manager_id AS "Manager ID" FROM employee JOIN role ON role.id = employee.role_id JOIN department ON department.id = role.department_id;`;
@@ -134,7 +133,7 @@ app.post('/api/add-employee', (req, res) => {
 				console.log('Added a new employee')
 				res.json({
 					message: 'success',
-					data: 'A new employee without a manager was added to the "employee" table'
+					data: 'A new employee without a manager was added'
 				});
 			}); 
 		} else {
