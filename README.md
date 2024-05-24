@@ -17,6 +17,8 @@ Open new integrated terminal at the repo folder and run command 'node index.js'.
 ![screenshot](./assets/img/Screenshot%202024-05-23%20at%2010.14.49 PM.png)
 ![screenshot2](./assets/img/Screenshot%202024-05-23%20at%2010.06.42 PM.png)
 Click [here](https://www.loom.com/share/e6267b323c3b40e4a706a93f367575a7?sid=fbc8eff0-42e3-4f74-8f90-4e02879ebab8) for walkthrough video.
+## Credits:
+AI Expert Learning Assistant & Stackoverflow
 
 
 
